@@ -1,13 +1,13 @@
 let timers4 = {
-    "a": { startTime: null, totalTime: 0, encounters: 0, timeElement: "top-left-time", encountersElement: "top-left-encounters" },
-    "s": { startTime: null, totalTime: 0, encounters: 0, timeElement: "top-right-time", encountersElement: "top-right-encounters" },
+    "i": { startTime: null, totalTime: 0, encounters: 0, timeElement: "top-left-time", encountersElement: "top-left-encounters" },
+    "o": { startTime: null, totalTime: 0, encounters: 0, timeElement: "top-right-time", encountersElement: "top-right-encounters" },
     "k": { startTime: null, totalTime: 0, encounters: 0, timeElement: "bottom-left-time", encountersElement: "bottom-left-encounters" },
     "l": { startTime: null, totalTime: 0, encounters: 0, timeElement: "bottom-right-time", encountersElement: "bottom-right-encounters" },
 };
 
 let timers2 = {
-    "a": { startTime: null, totalTime: 0, encounters: 0, timeElement: "left-time", encountersElement: "left-encounters" },
-    "l": { startTime: null, totalTime: 0, encounters: 0, timeElement: "right-time", encountersElement: "right-encounters" },
+    "i": { startTime: null, totalTime: 0, encounters: 0, timeElement: "left-time", encountersElement: "left-encounters" },
+    "o": { startTime: null, totalTime: 0, encounters: 0, timeElement: "right-time", encountersElement: "right-encounters" },
 };
 
 function updateDisplay(timers, key) {
@@ -75,12 +75,12 @@ document.addEventListener('keyup', (event) => {
 });
 
 document.getElementById("next-mouse-btn-4").addEventListener("click", () => {
-    addResultsToTable("#results-table-4", timers4, ["a", "s", "k", "l"]);
+    addResultsToTable("#results-table-4", timers4, ["i", "o", "k", "l"]);
     resetTimers(timers4);
 });
 
 document.getElementById("next-mouse-btn-2").addEventListener("click", () => {
-    addResultsToTable("#results-table-2", timers2, ["a", "l"]);
+    addResultsToTable("#results-table-2", timers2, ["i", "o"]);
     resetTimers(timers2);
 });
 
