@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behavioral Test Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Scoring Tool</h1>
+        <p>Hold down the following shortcuts to record exploration times: a = top left, s = top right, k = bottom left, l = bottom right</p>
+        <button id="switch-to-2-timers">Switch to 2 Timers</button>
+        <button id="switch-to-4-timers">Switch to 4 Timers</button>
+    </header>
+    
+    <!-- 4 Timers Section -->
+    <div id="four-timers-section">
+        <div class="container">
+            <div class="object" id="top-left">
+                <h2>Top Left Object</h2>
+                <p>Total Exploration Time: <span id="top-left-time">0</span> seconds</p>
+                <p>Total Encounters: <span id="top-left-encounters">0</span></p>
+            </div>
+            <div class="object" id="top-right">
+                <h2>Top Right Object</h2>
+                <p>Total Exploration Time: <span id="top-right-time">0</span> seconds</p>
+                <p>Total Encounters: <span id="top-right-encounters">0</span></p>
+            </div>
+            <div class="object" id="bottom-left">
+                <h2>Bottom Left Object</h2>
+                <p>Total Exploration Time: <span id="bottom-left-time">0</span> seconds</p>
+                <p>Total Encounters: <span id="bottom-left-encounters">0</span></p>
+            </div>
+            <div class="object" id="bottom-right">
+                <h2>Bottom Right Object</h2>
+                <p>Total Exploration Time: <span id="bottom-right-time">0</span> seconds</p>
+                <p>Total Encounters: <span id="bottom-right-encounters">0</span></p>
+            </div>
+        </div>
+        <button id="next-mouse-btn-4">Next Mouse</button>
+        <table id="results-table-4">
+            <thead>
+                <tr>
+                    <th>Top Left Exploration</th>
+                    <th>Top Left Encounters</th>
+                    <th>Top Right Exploration</th>
+                    <th>Top Right Encounters</th>
+                    <th>Bottom Left Exploration</th>
+                    <th>Bottom Left Encounters</th>
+                    <th>Bottom Right Exploration</th>
+                    <th>Bottom Right Encounters</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 2 Timers Section -->
+    <div id="two-timers-section" style="display: none;">
+        <div class="container">
+            <div class="object" id="left">
+                <h2>Left Object</h2>
+                <p>Total Exploration Time: <span id="left-time">0</span> seconds</p>
+                <p>Total Encounters: <span id="left-encounters">0</span></p>
+            </div>
+            <div class="object" id="right">
+                <h2>Right Object</h2>
+                <p>Total Exploration Time: <span id="right-time">0</span> seconds</p>
+                <p>Total Encounters: <span id="right-encounters">0</span></p>
+            </div>
+        </div>
+        <button id="next-mouse-btn-2">Next Mouse</button>
+        <table id="results-table-2">
+            <thead>
+                <tr>
+                    <th>Left Exploration</th>
+                    <th>Left Encounters</th>
+                    <th>Right Exploration</th>
+                    <th>Right Encounters</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
